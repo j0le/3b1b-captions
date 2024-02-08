@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"contributors": [["name", "some data", "1234", "56789"], ["name with \" and \"\"", "and less columns"]], "percentages": [["another name", "some project idk", "58%"], ["max mustermann", "the same project", "a percentage that does not add up to a 100"]]}
+=======
+[["name","some data","1234","more data"],["name with \" and \"\"","and less columns "]]
+>>>>>>> dd57abc52b542f28dc0a3cab119692fda1b05260
