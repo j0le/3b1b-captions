@@ -11,7 +11,7 @@ function _onTrigger() {
 }
 
 /**
- * Takes data and puts it into the sheet with the specified name starting at cell A1. The data has to be a two dimensional array.
+ * Takes data and puts it into the sheet with the specified name starting at cell A1.
  * @param {string} sheetName - The name of the sheet.
  * @param {string[][]} author - The data to be written.
  */
