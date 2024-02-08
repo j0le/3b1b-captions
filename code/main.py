@@ -1,2 +1,3 @@
-with open("data.csv", "w") as f:
-    f.write("""name,some data,1234,more data\nname with " and "",and less columns """)
+with open("data.json", "w") as f:
+    f.write(
+        """[[name,some data,1234,more data],[name with " and "",and less columns ]]""")
