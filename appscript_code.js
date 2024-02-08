@@ -1,12 +1,12 @@
 function _onTrigger() {
-  const response = UrlFetchApp.fetch("https://raw.githubusercontent.com/styrix560/captions/main/data.json")
+  const response = UrlFetchApp.fetch("https://raw.githubusercontent.com/j0le/3b1b-captions/main/sheets.json")
   const rawData = response.getContentText();
   const data = JSON.parse(rawData);
 
-  const percentages = data["percentages"];
-  putDataIntoSheet("Percentages", percentages);
+  // const percentages = data["percentages"];
+  // putDataIntoSheet("Percentages", percentages);
   
-  const contributors = data["contributors"];
+  const contributors = data["contributors_per_video"];
   putDataIntoSheet("Contributors", contributors);
 }
 
