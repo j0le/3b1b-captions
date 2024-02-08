@@ -1,4 +1,2 @@
-import datetime
-
-with open("out.txt", "w") as f:
-    f.write(str(datetime.datetime.now()))
+with open("data.csv", "w") as f:
+    f.write("""name,some data,1234,more data\nname with " and "",and less columns """)
