@@ -14,10 +14,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5.0.0
 
       - name: Run python script
         run: python $GITHUB_WORKSPACE/code/generate-sheets-json.py
+
+      - name: output sheets.json
+        run: cat sheets.json
 
       - name: Adding updated files to repository
         run: |

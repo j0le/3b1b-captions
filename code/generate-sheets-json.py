@@ -4,6 +4,7 @@ import pathlib
 import subprocess
 
 repo_root = pathlib.Path(__file__).parents[1]
+print(repo_root)
 
 paths = sorted(repo_root.rglob("video_url.txt"))
 
@@ -12,8 +13,8 @@ for path in paths:
     if path.is_file():
         folder = path.parent
         relative_folder = folder.relative_to(repo_root)
-        proc = subprocess.run(["git",
-                        "shortlog", "--summary", "--numbered", "--", folder],
+        proc = subprocess.run(["git", "-P",
+                        "shortlog", "--summary", "--numbered", "HEAD", "--", folder],
                        capture_output=True, check=True, shell=False)
         text = proc.stdout.decode("utf-8")
         print(relative_folder.as_posix())
