@@ -18,3 +18,15 @@ jobs:
 
       - name: Run python script
         run: python $GITHUB_WORKSPACE/code/main.py
+
+      - name: Add changes
+        run: git add .
+
+      - name: Commit changes
+        run: git commit -m "Auto update time"
+
+      - name: Fetch from main
+        run: git fetch origin main
+
+      - name: Push changes
+        run: git push origin HEAD:main
