@@ -1,5 +1,5 @@
 function _onTrigger() {
-  const response = UrlFetchApp.fetch("https://raw.githubusercontent.com/j0le/3b1b-captions/ole/sheets-json/sheets.json")
+  const response = UrlFetchApp.fetch("https://raw.githubusercontent.com/j0le/3b1b-captions/main/sheets.json")
   const rawData = response.getContentText();
   const data = JSON.parse(rawData);
 
